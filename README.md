@@ -64,7 +64,7 @@ Cleaned text replaced in-place + copied to clipboard as backup
 
 ## ✦ Download Pre-built APK
 
-Go to the [**Releases**](../../releases) tab to download the latest `Voice to Gemini.apk`.
+Go to the [**Releases**](../../releases) tab to download the latest `Voice-to-Gemini.apk`.
 
 1. Download the `.apk` file to your Android phone.
 2. Open the file and allow **"Install from unknown sources"** when prompted.
@@ -108,12 +108,12 @@ sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
 
 Output APK will be generated at:
 ```
-app/build/outputs/apk/debug/Voice to Gemini.apk
+app/build/outputs/apk/debug/Voice-to-Gemini.apk
 ```
 
 ### 4. Install onto Device via ADB
 ```bash
-adb install -r "app/build/outputs/apk/debug/Voice to Gemini.apk"
+adb install -r app/build/outputs/apk/debug/Voice-to-Gemini.apk
 ```
 
 ---
