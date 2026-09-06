@@ -118,6 +118,27 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 ---
 
+## ✦ Changing Gemini Models (Rebuilding)
+
+By default, the app uses **Gemini 3.5 Flash Lite** as primary, with automatic fallback to **Gemini 3.1 Flash Lite** if the primary model is offline or returns an error.
+
+If you want to use different models (e.g. `gemini-2.5-flash`, `gemini-pro`, etc.), edit [`app/src/main/java/com/poc/voicetogemini/GeminiClient.kt`](app/src/main/java/com/poc/voicetogemini/GeminiClient.kt):
+
+```kotlin
+companion object {
+    // Modify these constants to change models:
+    const val MODEL_PRIMARY = "gemini-3.5-flash-lite"
+    const val MODEL_FALLBACK = "gemini-3.1-flash-lite"
+}
+```
+
+Then rebuild:
+```bash
+./gradlew assembleDebug
+```
+
+---
+
 ## ✦ How to Serve APKs to Users (GitHub Releases)
 
 This repository includes a pre-configured GitHub Actions CI/CD workflow (`.github/workflows/release.yml`).
