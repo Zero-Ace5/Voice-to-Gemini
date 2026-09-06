@@ -29,21 +29,21 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+      - name: Build Release APK
+        run: ./gradlew assembleRelease --stacktrace
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: VoiceToGemini-Debug-APK
-          path: app/build/outputs/apk/debug/Voice-to-Gemini.apk
+          name: VoiceToGemini-APK
+          path: app/build/outputs/apk/release/Voice-to-Gemini.apk
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
           name: ${{ github.ref_name }}
-          files: app/build/outputs/apk/debug/Voice-to-Gemini.apk
+          files: app/build/outputs/apk/release/Voice-to-Gemini.apk
           draft: false
           prerelease: false
           generate_release_notes: true

@@ -95,25 +95,25 @@ sdk.dir=C:\\Users\\YOUR_USERNAME\\AppData\\Local\\Android\\Sdk
 sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
 ```
 
-### 3. Build Debug APK
+### 3. Build APK
 - **Windows (PowerShell):**
   ```powershell
-  .\gradlew.bat assembleDebug
+  .\gradlew.bat assembleRelease
   ```
 - **macOS / Linux:**
   ```bash
   chmod +x gradlew
-  ./gradlew assembleDebug
+  ./gradlew assembleRelease
   ```
 
-Output APK will be generated at:
+Output APK (~1.5 MB optimized) will be generated at:
 ```
-app/build/outputs/apk/debug/Voice-to-Gemini.apk
+app/build/outputs/apk/release/Voice-to-Gemini.apk
 ```
 
 ### 4. Install onto Device via ADB
 ```bash
-adb install -r app/build/outputs/apk/debug/Voice-to-Gemini.apk
+adb install -r app/build/outputs/apk/release/Voice-to-Gemini.apk
 ```
 
 ---
