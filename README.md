@@ -8,6 +8,9 @@
 > **Battery-efficient, open-source Android speech post-processor.**  
 > Speak freely into Gboard voice typing with natural pauses. Tap the floating Star ✦ to clean disfluencies ("um", "uh", "you know"), fix recognition typos, and format text in-place using Google's **Gemini 3.5 Flash Lite**.
 
+> [!IMPORTANT]  
+> **Google Gemini API Key Required:** This app connects directly to Google Gemini and requires your own API key. You can generate a free key in seconds at **[Google AI Studio](https://aistudio.google.com/app/apikey)**. Paste it once into the app setup screen to activate.
+
 ---
 
 ## ✦ Why This Exists
