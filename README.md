@@ -64,7 +64,7 @@ Cleaned text replaced in-place + copied to clipboard as backup
 
 ## ✦ Download Pre-built APK
 
-Go to the [**Releases**](../../releases) tab to download the latest `app-debug.apk`.
+Go to the [**Releases**](../../releases) tab to download the latest `Voice to Gemini.apk`.
 
 1. Download the `.apk` file to your Android phone.
 2. Open the file and allow **"Install from unknown sources"** when prompted.
@@ -81,8 +81,8 @@ Go to the [**Releases**](../../releases) tab to download the latest `app-debug.a
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/voice-to-gemini.git
-cd voice-to-gemini
+git clone https://github.com/Zero-Ace5/Voice-to-Gemini.git
+cd Voice-to-Gemini
 ```
 
 ### 2. Configure SDK Location
@@ -108,12 +108,12 @@ sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
 
 Output APK will be generated at:
 ```
-app/build/outputs/apk/debug/app-debug.apk
+app/build/outputs/apk/debug/Voice to Gemini.apk
 ```
 
 ### 4. Install onto Device via ADB
 ```bash
-adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb install -r "app/build/outputs/apk/debug/Voice to Gemini.apk"
 ```
 
 ---
@@ -135,37 +135,6 @@ companion object {
 Then rebuild:
 ```bash
 ./gradlew assembleDebug
-```
-
----
-
-## ✦ How to Serve APKs to Users (GitHub Releases)
-
-This repository includes a pre-configured GitHub Actions CI/CD workflow (`.github/workflows/release.yml`).
-
-### Automatic Release via Git Tags:
-Whenever you push a git tag (e.g., `v1.0.0`), GitHub Actions will automatically compile the APK and attach it directly to a new GitHub Release:
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
-
-### Manual Release:
-1. Go to your GitHub repository -> **Releases** -> **Draft a new release**.
-2. Create a tag (e.g. `v1.0.0`).
-3. Drag & drop `app-debug.apk` into the release binary section.
-4. Click **Publish release**. Users can now download it directly!
-
----
-
-## ✦ Recommended GitHub Topics / Search Tags
-
-Add these topics in your GitHub repository settings (under the **About** gear icon) to maximize discoverability:
-
-```
-android, gemini, gemini-api, voice-typing, speech-to-text, gboard, accessibility-service,
-ai, productivity, open-source, kotlin, flash-lite, speech-recognition, text-editor, android-app
 ```
 
 ---
