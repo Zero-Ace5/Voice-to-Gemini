@@ -13,6 +13,18 @@
 
 ---
 
+## ✦ Screenshots
+
+<p align="center">
+  <img src="screenshots/screenshot1.jpg" width="31%" alt="Setup &amp; Permissions" />
+  &nbsp;
+  <img src="screenshots/screenshot2.jpg" width="31%" alt="Floating Star Above Keyboard" />
+  &nbsp;
+  <img src="screenshots/screenshot3.jpg" width="31%" alt="1-Tap Polished Result" />
+</p>
+
+---
+
 ## ✦ Why This Exists
 
 Voice typing on mobile often produces raw, run-on text loaded with verbal fillers ("um", "uh", "like", "basically") and punctuation errors. Other AI voice utilities run continuous background audio recording loops that drain your battery and compromise privacy.
