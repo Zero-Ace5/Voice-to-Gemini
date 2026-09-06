@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bubbleRoot"
+    android:layout_width="44dp"
+    android:layout_height="44dp"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Pure Floating Star Icon -->
+    <ImageView
+        android:id="@+id/ivSparkle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_sparkle"
+        android:contentDescription="Polish Text" />
+
+    <!-- In-Place Processing Spinner -->
+    <ProgressBar
+        android:id="@+id/progressSpinner"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="#B388FF"
+        android:visibility="gone" />
+
+    <!-- In-Place Success Indicator -->
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_check"
+        android:contentDescription="Done"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Voice to Gemini</string>
+    <string name="accessibility_service_description">Detects focused text fields to polish speech and transcribe with Gemini Flash Lite.</string>
+</resources>
