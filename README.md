@@ -15,13 +15,9 @@
 
 ## ✦ Screenshots
 
-<p align="center">
-  <img src="screenshots/screenshot1.jpg" width="31%" alt="Setup &amp; Permissions" />
-  &nbsp;
-  <img src="screenshots/screenshot2.jpg" width="31%" alt="Floating Star Above Keyboard" />
-  &nbsp;
-  <img src="screenshots/screenshot3.jpg" width="31%" alt="1-Tap Polished Result" />
-</p>
+| 1. Setup &amp; Permissions | 2. Floating Star Above Keyboard | 3. 1-Tap Polished Result |
+| :---: | :---: | :---: |
+| ![Setup &amp; Permissions](screenshots/screenshot1.jpg) | ![Floating Star Above Keyboard](screenshots/screenshot2.jpg) | ![1-Tap Polished Result](screenshots/screenshot3.jpg) |
 
 ---
 
